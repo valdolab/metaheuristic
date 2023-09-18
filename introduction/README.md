@@ -40,12 +40,14 @@ $$\text{best}\ \gets\bar{x}.$$
 <br>
 
 Después, se elige aleatoriamente una componente $$x_\ell$$ de $$\bar{x}$$ y se define la cadena mutada $$\bar{y}$$ como:
+
 $$
 \begin{align}
 y_i&=x_i \:\forall  i\neq\ell, \\
 y_{\ell}&= \neg x_{\ell}.
 \end{align}
 $$
+
 Sea $f$ la función objetivo (la altura de la colina):
 
 $$\textbf{If} \quad f(\bar{y})\geq f(\bar{x}) \quad \textbf{then} \quad \text{best} \gets\bar{y}.$$
@@ -82,7 +84,7 @@ $$
 
 ### **3. Realice la modelación matemática necesaria para la solución, mediante RMHC, del siguiente problema de optimización**
 
-Obtención de mínimos de la función $f(x)=\sum_{i=1}^{D}{x_i^2}$, $-10\leq x_i \leq 10$
+Obtención de mínimos de la función $$f(x)=\sum_{i=1}^{D}{x_i^2}$, $-10\leq x_i \leq 10$$
 
 ### Modelo Matemático ###
 Definimos el problema de optimización como una $x = [x_1, \dots , x_i, \dots, x_D]$ tal que $1\leq i \leq D$ donde $-10 \leq x_i \leq 10$, por lo que podemos definir el espacio de soluciones como:
