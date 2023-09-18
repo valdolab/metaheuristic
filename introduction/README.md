@@ -53,7 +53,7 @@ $$\textbf{If} \quad f(\bar{y})\geq f(\bar{x}) \quad \textbf{then} \quad \text{be
 
 Por último, la función objetivo se evalúa un número determinado de veces $k$ antes de regresar el valor de best. De manera que el pseudocódigo queda como:
 
-$
+$$
 \begin{align}
 &\textbf{Input: } \bar{x}, \: f, \: k
 \\
@@ -77,9 +77,10 @@ $
 \\
 & \textbf{return } \text{best}
 \end{align}
-$
+$$
 <br>
 
+$$\lim_{x \to 0^+} \dfrac{1}{x} = \infty$$
 
 ### **3. Realice la modelación matemática necesaria para la solución, mediante RMHC, del siguiente problema de optimización**
 
