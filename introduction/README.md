@@ -80,7 +80,6 @@ $$
 $$
 <br>
 
-$$\lim_{x \to 0^+} \dfrac{1}{x} = \infty$$
 
 ### **3. Realice la modelación matemática necesaria para la solución, mediante RMHC, del siguiente problema de optimización**
 
