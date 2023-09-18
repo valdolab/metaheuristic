@@ -3,12 +3,6 @@
 
 <br>
 
-<style tyle="text/css">
-p {
-text-align: justify;
-}
-</style>
-
 ### **1. Enuncie las ventajas y desventajas de la Ascensión de Colinas** 
 
 **Ventajas:**
