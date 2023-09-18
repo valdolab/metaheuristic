@@ -1,21 +1,6 @@
-# Practica 5
-### Solución de problemas mediante Ascensión de Colinas
-**Profesora**: Dra. Yenny Villuendas Rey <br>
-**Escuelas**: <br> $^{1}$ Escuela Superior de Cómputo del IPN <br> $^{2}$ Centro de Investigación en Computación del IPN <br>
-**Equipo**: <br>
-- $^{1}$ Enya Quetzalli Gómez Rodríguez
-- $^{2}$ Luis Fernando Quezada Mata
-- $^{2}$ Osvaldo David Velázquez González
-
-[Ver en línea](https://hackmd.io/@metah/practica5)
+## Solución de problemas mediante Ascensión de Colinas
 
 <br>
-
-<style tyle="text/css">
-p {
-text-align: justify;
-}
-</style>
 
 ### **1. Analice detalladamente las seis funciones definidas en el documento “Funciones de prueba.pdf”.**
 
@@ -325,8 +310,4 @@ cooler = lambda t : t*random.uniform(0.8,0.99)
 |Sum Squares|0.0059|0.0063|0.0060|0.0060|0.0001|
 
 <br>
-
-### **5. Reporte, además, de forma independiente, para cada función y cada ejecución: mejor solución encontrada por el algoritmo, la temperatura a la que se encontró, el número de evaluaciones de la función objetivo a la que se encontró, y si fue conservada o no por el algoritmo (fue conservada si coincide con la solución devuelta, NO fue conservada si el algoritmo la desechó durante su ejecución).**
-
-texto
 
