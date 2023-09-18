@@ -8,9 +8,7 @@ Falta Poner un analisis detallado de las seis funciones
 
 Las funciones encontradas en el documento "Funciones de prueba.pdf" son las siguientes:
 **Función Alpine 1:**
-$$
-f_1(x)=\sum_{i=1}^{D}{\;|\; x_i\sin(x_i)+0.1x_i \;|\;}
-$$
+$$f_1(x)=\sum_{i=1}^{D}{\;|\; x_i\sin(x_i)+0.1x_i \;|\;}$$
 Punto mínimo: $$x^*=f(0,0)$$ y valor mínimo: $$f(x^*)=0$$
 
 **Función Dixon & Price:**
