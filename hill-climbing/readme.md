@@ -12,41 +12,29 @@ $$f_1(x)=\sum_{i=1}^{D}{\;|\; x_i\sin(x_i)+0.1x_i \;|\;}$$
 Punto mínimo: $$x^*=f(0,0)$$ y valor mínimo: $$f(x^*)=0$$
 
 **Función Dixon & Price:**
-$$
-f_2(x)=(x_1-1)^2+\sum_{i=2}^{D}{i(2 \sin(x_i)\;-\;x_{i-1})^2}
-$$
-Punto mínimo: $x^*=f(2(\frac{2^i-2}{2^i}))$ y valor mínimo: $f(x^*)=0$
+$$f_2(x)=(x_1-1)^2+\sum_{i=2}^{D}{i(2 \sin(x_i)\;-\;x_{i-1})^2}$$
+Punto mínimo: $$x^*=f(2(\frac{2^i-2}{2^i}))$ y valor mínimo: $f(x^*)=0$$
 
 **Función Quintic:**
-$$
-f_3(x)=\sum_{i=1}^{D}{\;|\; x^5_i-3x^4_i+4x^3_i-2x^2_i-10x_1-4 \;|\;}
-$$
-Punto mínimo: $x^*=f(-1\;or\;2)$ y valor mínimo: $f(x^*)=0$
+$$f_3(x)=\sum_{i=1}^{D}{\;|\; x^5_i-3x^4_i+4x^3_i-2x^2_i-10x_1-4 \;|\;}$$
+Punto mínimo: $$x^*=f(-1\;or\;2)$$ y valor mínimo: $$f(x^*)=0$$
 
 **Función Schwefel 2.23:**
-$$
-f_4(x)=\sum_{i=1}^{D}{x^{10}_i}
-$$
-Punto mínimo: $x^*=f(0,0)$ y valor mínimo: $f(x^*)=0$
+$$f_4(x)=\sum_{i=1}^{D}{x^{10}_i}$$
+Punto mínimo: $$x^*=f(0,0)$$ y valor mínimo: $$f(x^*)=0$$
 
 **Función Streched V Sine Wave:**
-$$
-f_5(x)=\sum_{i=1}^{D-1}{(x^2_{i+1}+x^2_i)^{0.25} \Big[\sin^2\{50(x^2_{i+1}+x^2_i)^{0.1}\}+0.1\Big] }
-$$
-Punto mínimo: $x^*=f(0,0)$ y valor mínimo: $f(x^*)=0$
+$$f_5(x)=\sum_{i=1}^{D-1}{(x^2_{i+1}+x^2_i)^{0.25} \Big[\sin^2\{50(x^2_{i+1}+x^2_i)^{0.1}\}+0.1\Big] }$$
+Punto mínimo: $$x^*=f(0,0)$$ y valor mínimo: $$f(x^*)=0$$
 
 **Función Sum Squares:**
-$$
-f_6(x)=\sum_{i=1}^{D}{ix^2_i}
-$$
-Punto mínimo: $x^*=f(0,0)$ y valor mínimo: $f(x^*)=0$
+$$f_6(x)=\sum_{i=1}^{D}{ix^2_i}$$
+Punto mínimo: $$x^*=f(0,0)$$ y valor mínimo: $$f(x^*)=0$$
 
 ### **2. Implemente dichas funciones.**
 
 **Función Alpine 1:**
-$$
-f_1(x)=\sum_{i=1}^{D}{\;|\; x_i\sin(x_i)+0.1x_i \;|\;}
-$$
+$$f_1(x)=\sum_{i=1}^{D}{\;|\; x_i\sin(x_i)+0.1x_i \;|\;}$$
 
 
 ```python=
@@ -59,9 +47,7 @@ def f(x):
 ```
 
 **Función Dixon & Price:**
-$$
-f_2(x)=(x_1-1)^2+\sum_{i=2}^{D}{i(2 \sin(x_i)\;-\;x_{i-1})^2}
-$$
+$$f_2(x)=(x_1-1)^2+\sum_{i=2}^{D}{i(2 \sin(x_i)\;-\;x_{i-1})^2}$$
 
 ```python=
 #funcion dixon and price
@@ -76,9 +62,7 @@ def f(x):
 ```
 
 **Función Quintic:**
-$$
-f_3(x)=\sum_{i=1}^{D}{\;|\; x^5_i-3x^4_i+4x^3_i-2x^2_i-10x_1-4 \;|\;}
-$$
+$$f_3(x)=\sum_{i=1}^{D}{\;|\; x^5_i-3x^4_i+4x^3_i-2x^2_i-10x_1-4 \;|\;}$$
 
 ```python=
 #funcion quintic
@@ -90,9 +74,7 @@ def f(x):
 ```
 
 **Función Schwefel 2.23:**
-$$
-f_4(x)=\sum_{i=1}^{D}{x^{10}_i}
-$$
+$$f_4(x)=\sum_{i=1}^{D}{x^{10}_i}$$
 
 ```python=
 #funcion schwefel 2.23
@@ -104,9 +86,7 @@ def f(x):
 ```
 
 **Función Streched V Sine Wave:**
-$$
-f_5(x)=\sum_{i=1}^{D-1}{(x^2_{i+1}+x^2_i)^{0.25} \Big[\sin^2\{50(x^2_{i+1}+x^2_i)^{0.1}\}+0.1\Big] }
-$$
+$$f_5(x)=\sum_{i=1}^{D-1}{(x^2_{i+1}+x^2_i)^{0.25} \Big[\sin^2\{50(x^2_{i+1}+x^2_i)^{0.1}\}+0.1\Big] }$$
 
 ```python=
 #funcion strched V sine wave
@@ -119,9 +99,7 @@ def f(x):
 ```
 
 **Función Sum Squares:**
-$$
-f_6(x)=\sum_{i=1}^{D}{ix^2_i}
-$$
+$$f_6(x)=\sum_{i=1}^{D}{ix^2_i}$$
 
 ```python=
 #funcion sum squares
