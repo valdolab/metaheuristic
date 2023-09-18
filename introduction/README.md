@@ -1,13 +1,5 @@
-# Practica 4
-### Problema de optmización de una función 
+## Problema de optmización de una función 
 **Profesora**: Dra. Yenny Villuendas Rey <br>
-**Escuelas**: <br> $^{1}$ Escuela Superior de Cómputo del IPN <br> $^{2}$ Centro de Investigación en Computación del IPN <br>
-**Equipo**: <br>
-- $^{1}$ Enya Quetzalli Gómez Rodríguez
-- $^{2}$ Luis Fernando Quezada Mata
-- $^{2}$ Osvaldo David Velázquez González
-
-[Ver en línea](https://hackmd.io/@metah/practica4)
 
 <br>
 
