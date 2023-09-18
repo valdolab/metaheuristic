@@ -53,6 +53,7 @@ $$\textbf{If} \quad f(\bar{y})\geq f(\bar{x}) \quad \textbf{then} \quad \text{be
 
 Por último, la función objetivo se evalúa un número determinado de veces $k$ antes de regresar el valor de best. De manera que el pseudocódigo queda como:
 
+$$
 \begin{align}
 &\textbf{Input: } \bar{x}, \: f, \: k
 \\
@@ -76,6 +77,7 @@ Por último, la función objetivo se evalúa un número determinado de veces $k$
 \\
 & \textbf{return } \text{best}
 \end{align}
+$$
 <br>
 
 
