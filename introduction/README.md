@@ -33,15 +33,13 @@
 **Pseudocódigo del algoritmo Random mutation hill-climbing (RMHC):**
 
 En el primer paso se elige aleatoriamente una cadena de bits:
-$$\begin{equation}
-\bar{x}\in \left\lbrace 0,1 \right\rbrace^n,
-\end{equation}$$
+$$\bar{x}\in \left\lbrace 0,1 \right\rbrace^n,$$
 y a esta cadena la llamamos la mejor evaluada (best), es decir
 $$\text{best}\ \gets\bar{x}.$$
 
 <br>
 
-Después, se elige aleatoriamente una componente $$x_\ell$ de $\bar{x}$$ y se define la cadena mutada $$\bar{y}$$ como:
+Después, se elige aleatoriamente una componente $$x_\ell$$ de $$\bar{x}$$ y se define la cadena mutada $$\bar{y}$$ como:
 $$
 \begin{align}
 y_i&=x_i \:\forall  i\neq\ell, \\
