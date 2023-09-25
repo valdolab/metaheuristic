@@ -41,9 +41,11 @@ La **selección proporcional** o PS para abreviar, es un operador de selección 
 
 La implementación se realiza como sigue. Dados una población $\mathcal{P}$ y un individuo $i \in \mathcal{P}$, y denotando por $f_{j}$ al fitness de cualquier individuo $j \in \mathcal{P}$, la probabilidad de selección del individuo $i$ se define como:
 
+$$
 \begin{equation}
 p_{i} = \frac{f_{i}}{\displaystyle\sum_{j \in \mathcal{P}} f_{j}}.
 \end{equation}
+$$
 
 <br>
 
