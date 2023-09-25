@@ -69,8 +69,7 @@ $$
 
 Se eligen aleatoriamente dos puntos de corte (en este caso entre $1$ y $5$), supónganse $3$ y $5$; entonces, se copia a $c_{1}$ la subsecuencia de genes de $P_{1}$ (marcada en rojo) entre estos dos puntos:
 
-$$
-\begin{align}
+$$\begin{align}
 P_{1} = (5,4,3,\color{red}6,\color{red}1,2)
 \\
 c_{1} = (\_,\_,\_,\color{red}6,\color{red}1,\_)
