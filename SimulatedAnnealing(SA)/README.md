@@ -23,14 +23,16 @@ El algoritmo de recocido simulado se puede ver como una iteración de algoritmos
 
 La probabilidad de aceptación se expresa como:
 
-$$P_c \{acepta, j\} =$$
+$P_c \{acepta, j\} =$
+
 $$
 \begin{cases}
  & \text{ 1 } \quad\quad\quad\quad\quad\quad \quad si f(j) \leq f(i) \\ 
  & \ exp(\frac{f(i)-f(j)}{c_k}) \quad\quad si f(j) >  f(i)
 \end{cases}
 $$
-Dode $$c \in R^+$$ denota al parámetro de control.
+
+Donde $$c \in R^+$$ denota al parámetro de control.
 
 $$
 \begin{align}
