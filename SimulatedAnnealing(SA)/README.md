@@ -23,7 +23,7 @@ El algoritmo de recocido simulado se puede ver como una iteración de algoritmos
 
 La probabilidad de aceptación se expresa como:
 
-$P_c \{acepta, j\} =$
+$P_c\{acepta, j\} =$
 
 $$
 \begin{cases}
