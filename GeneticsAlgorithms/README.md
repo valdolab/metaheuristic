@@ -1,21 +1,4 @@
-# Practica 10 - Algoritmos Genéticos
 ### Solución de problemas mediante Algoritmos Genéticos
-**Profesora**: Dra. Yenny Villuendas Rey <br>
-**Escuelas**: <br> $^{1}$ Escuela Superior de Cómputo del IPN <br> $^{2}$ Centro de Investigación en Computación del IPN <br>
-**Equipo**: <br>
-- $^{1}$ Enya Quetzalli Gómez Rodríguez
-- $^{2}$ Luis Fernando Quezada Mata
-- $^{2}$ Osvaldo David Velázquez González
-
-[Ver en línea](https://hackmd.io/@metah/HyU0R2dO_)
-
-<br>
-
-<style tyle="text/css">
-p {
-text-align: justify;
-}
-</style>
 
 
 ### **1. Enuncie las ventajas y desventajas de los Algoritmos Genéticos (GA).**
