@@ -93,39 +93,49 @@ Podemos encontrar algunas otras aplicaciones de los algoritmos de Recocido Simul
 
 En el problema de la mochila se tienen $n$ distintos items $i \in \left\lbrace 1,\dots,n \right\rbrace$. Estos items tienen dos características: peso y beneficio, denotados respectivamente por $w_{i}$ y $b_{i}$, los cuales se consideran números reales no negativos. La mochila soporta un peso máximo $W \geq 0$, por lo que el problema consiste en meter items a la mochila de tal forma que se maximice el beneficio total $B$ sin que el peso total exceda $W$. Es decir, se busca maximizar la función
 
+$$
 \begin{align}
 B(\bar{x}) = \sum_{i=1}^{n} x_{i}b_{i},
 \end{align}
+$$
 
 sujetos a las restricciones
 
+$$
 \begin{align}
 \sum_{i=1}^{n} x_{i}w_{i} \leq W,
 \end{align}
+$$
 
 en donde $x_{i} \in \left\lbrace 0,1 \right\rbrace$ representa si el item $i$ está dentro de la mochila ($x_{i} = 1$) o no ($x_{i} = 0$).
 
 Para resolver el problema usando el algoritmo SA, definimos el espacio de estados como el conjunto
 
+$$
 \begin{equation}
 S = \left\lbrace \bar{x} \in \left\lbrace 0,1 \right\rbrace^{n} \: \middle| \: \sum_{i=1}^{n} x_{i}w_{i} \leq W, \right\rbrace,
 \end{equation}
+$$
 
 en donde el estado inicial será cualquier elemento elegido aleatoriamente de este conjunto.
 
 El algoritmo SA requiere definir una vecindad para cada estado en $S$. En este caso, dado un estado $\bar{x} \in S$, su vecindad será un conjunto $V_{\bar{x}} \subseteq S$ que contenga todos los estados que difieran de $\bar{x}$ en una sola de sus entradas. Formalmente:
 
+$$
 \begin{equation}
 V_{\bar{x}} = \left\lbrace \bar{y} \in S \: \middle| \: d_{h}(\bar{x},\bar{y}) = 1  \right\rbrace
 \end{equation}
+$$
 
 en donde $d_{h}(\bar{x},\bar{y})$ denota la distancia de Hamming entre los estados $\bar{x}$ y $\bar{y}$.
 
 Además, dado un estado $\bar{x}$ con una vecindad $V_{\bar{x}}$, cada elemento $\bar{y}$ de la vecidad tiene una probabilidad asociada $P_{\bar{x}}(\bar{y})$ dada por:
 
+$$
 \begin{equation}
 P_{\bar{x}}(\bar{y}) =  \text{exp}\left( \frac{B(\bar{y})-B(\bar{x})}{T} \right)
 \end{equation}
+$$
 
 donde $T$ representa la temperatura.
 
