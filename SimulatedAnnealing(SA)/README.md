@@ -1,24 +1,4 @@
 # Práctica 6 (Recocido Simulado)
-**Profesora**: Dra. Yenny Villuendas Rey
-
-**Escuelas**:
-$^{1}$ Escuela Superior de Cómputo del IPN
-$^{2}$ Centro de Investigación en Computación del IPN
-
-**Equipo**: 
-- Enya Quetzalli Gómez Rodríguez$^{1}$
-- Luis Fernando Quezada Mata$^{2}$
-- Osvaldo David Velazquez Gonzalez$^{2}$
-
-[Ver en línea](https://hackmd.io/@metah/practica6)
-
-<br>
-
-<style tyle="text/css">
-p {
-text-align: justify;
-}
-</style>
 
 ### **1. Enuncie las ventajas y desventajas del Recocido Simulado (SA)** ###
 
