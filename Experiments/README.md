@@ -1,21 +1,5 @@
 # Practica 9 - Lab6
 ### Solución de problemas mediante Recocido Simulado (SA)
-**Profesora**: Dra. Yenny Villuendas Rey <br>
-**Escuelas**: <br> $^{1}$ Escuela Superior de Cómputo del IPN <br> $^{2}$ Centro de Investigación en Computación del IPN <br>
-**Equipo**: <br>
-- $^{1}$ Enya Quetzalli Gómez Rodríguez
-- $^{2}$ Luis Fernando Quezada Mata
-- $^{2}$ Osvaldo David Velázquez González
-
-[Ver en línea](https://hackmd.io/@metah/practica9)
-
-<br>
-
-<style tyle="text/css">
-p {
-text-align: justify;
-}
-</style>
 
 
 ### **1. Analice detalladamente las seis funciones definidas en el documento “Funciones de prueba.pdf”.**
