@@ -93,19 +93,15 @@ Podemos encontrar algunas otras aplicaciones de los algoritmos de Recocido Simul
 
 En el problema de la mochila se tienen $n$ distintos items $i \in \left\lbrace 1,\dots,n \right\rbrace$. Estos items tienen dos características: peso y beneficio, denotados respectivamente por $w_{i}$ y $b_{i}$, los cuales se consideran números reales no negativos. La mochila soporta un peso máximo $W \geq 0$, por lo que el problema consiste en meter items a la mochila de tal forma que se maximice el beneficio total $B$ sin que el peso total exceda $W$. Es decir, se busca maximizar la función
 
-$$
-\begin{align}
+$$\begin{align}
 B(\bar{x}) = \sum_{i=1}^{n} x_{i}b_{i},
-\end{align}
-$$
+\end{align}$$
 
 sujetos a las restricciones
 
-$$
-\begin{align}
+$$\begin{align}
 \sum_{i=1}^{n} x_{i}w_{i} \leq W,
-\end{align}
-$$
+\end{align}$$
 
 en donde $x_{i} \in \left\lbrace 0,1 \right\rbrace$ representa si el item $i$ está dentro de la mochila ($x_{i} = 1$) o no ($x_{i} = 0$).
 
