@@ -59,30 +59,37 @@ El **operador de cruce OX** es utilizado  para representaciones de orden (como e
 
 Considere el siguiente caso para ejemplificar el operador de cruce OX. Se seleccionan dos padres $P_{1}$ y $P_{2}$:
 
+$$
 \begin{align}
 P_{1} = (5,4,3,6,1,2)
 \\
 P_{2} = (3,1,6,2,5,4)
 \end{align}
+$$
 
 Se eligen aleatoriamente dos puntos de corte (en este caso entre $1$ y $5$), supónganse $3$ y $5$; entonces, se copia a $c_{1}$ la subsecuencia de genes de $P_{1}$ (marcada en rojo) entre estos dos puntos:
 
+$$
 \begin{align}
 P_{1} = (5,4,3,\color{red}6,\color{red}1,2)
 \\
 c_{1} = (\_,\_,\_,\color{red}6,\color{red}1,\_)
 \end{align}
+$$
 
 Por último, después del segundo punto de corte se colocan en $c_{1}$ los genes de $P_{2}$ (marcados en verde) en el mismo orden que aparecen en su cromosoma, omitiendo aquellos que fueron copiados de $P_{1}$ (marcados en rojo):
 
+$$
 \begin{align}
 P_{2} = (\color{green}3,1,6,\color{green}2,\color{green}5,\color{green}4)
 \\
 c_{1} = (\color{green}2,\color{green}5,\color{green}4,\color{red}6,\color{red}1,\color{green}3)
 \end{align}
+$$
 
 Para obtener un segundo hijo $c_{2}$ se repite el mismo procedimiento usando los mismos puntos de corte e intercambiando el rol de los padres, dando lugar en este caso a:
 
+$$
 \begin{align}
 P_{2} = (3,1,6,\color{green}2,\color{green}5,4)
 \\
@@ -90,6 +97,7 @@ P_{1} = (5,\color{red}4,\color{red}3,\color{red}6,\color{red}1,2)
 \\
 c_{2} = (\color{red}3,\color{red}6,\color{red}1,\color{green}2,\color{green}5,\color{red}4)
 \end{align}
+$$
 
 
 <br>
@@ -104,17 +112,21 @@ La **mutación de un gen** es un operador de mutación para representaciones bin
 
 Considere el siguiente caso para ejemplificar el operador de mutación de un gen. Supóngase que el cromosoma del individuo al que se le aplicará el operador de mutación es el siguiente:
 
+$$
 \begin{equation}
 x = (1,1,0,1,0,0,1)
 \end{equation}
+$$
 
 Se elige entonces un locus aleatorio (en este caso entre $1$ y $7$), supóngase $5$; entonces, se niega el gen en la posición $5$ del cromosoma (marcado en rojo):
 
+$$
 \begin{align}
 x = (1,1,0,1,\color{red}0,0,1)
 \\
 x' = (1,1,0,1,\color{red}1,0,1)
 \end{align}
+$$
 
 en donde $x'$ denota el cromosoma ya mutado.
 
@@ -133,35 +145,45 @@ El tamaño de la población de un algoritmo genético es un parámetro sumamente
 
 En el problema de la mochila se tienen $n$ distintos items $i \in \left\lbrace 1,\dots,n \right\rbrace$. Estos items tienen dos características: peso y beneficio, denotados respectivamente por $w_{i}$ y $b_{i}$, los cuales se consideran números reales no negativos. La mochila soporta un peso máximo $W \geq 0$, por lo que el problema consiste en meter items a la mochila de tal forma que se maximice el beneficio total $B$ sin que el peso total exceda $W$. Es decir, se busca maximizar la función
 
+$$
 \begin{align}
 B(x) = \sum_{i=1}^{n} x_{i}b_{i},
 \end{align}
+$$
 
 sujetos a las restricciones
 
+$$
 \begin{align}
 \sum_{i=1}^{n} x_{i}w_{i} \leq W,
 \end{align}
+$$
 
 en donde $x_{i} \in \left\lbrace 0,1 \right\rbrace$ representa si el item $i$ está dentro de la mochila ($x_{i} = 1$) o no ($x_{i} = 0$). Por tanto, el espacio de soluciones está dado por
 
+$$
 \begin{equation}
 \text{Sol} = \left\lbrace x \in \left\lbrace 0,1 \right\rbrace^{n} \: : \: \sum_{i=1}^{n} x_{i}w_{i} \leq W \right\rbrace.
 \end{equation}
+$$
 
 Para resolver el problema usando GA, fijamos primero el tamaño de la población en $m \in \mathbb{N}$ con $2 \leq m \leq \left| \text{Sol} \right|$. Entonces, el espacio de estados está dado por el conjunto
 
+$$
 \begin{equation}
 S = \left\lbrace S_{m} \subseteq \text{Sol} \: : \: \left|S_{m} \right| = m \right\rbrace,
 \end{equation}
+$$
 
 es decir, los estados son todos los subconjuntos de cardinalidad $m$ del espacio de soluciones. En este caso, el estado inicial estará dado por cualquier elemento elegido aleatoriamente de $S$.
 
 Una vez que se tiene una población, es decir un elemento de $S$, el siguiente paso es seleccionar a los individuos que se van a reproducir, lo cual se puede realizar con un operador de selección, en este caso el operador de selección proporcional (véase la sección 3). Dada una población $S_{m} \in S$ y un individuo $x \in S_{m}$, la probabilidad de selección para el operador de selección proporcional estará dada por:
 
+$$
 \begin{equation}
 p_{x} = \frac{B(x)}{\displaystyle\sum_{y \in S_{m}} B(y)}.
 \end{equation}
+$$
 
 El siguiente paso en un GA consiste en el cruzamiento, el cual es implementado con un operador de cruzamiento, en este caso el operador de cruce en un punto, el cual consiste en seleccionar aleatoriamente un punto de corte (entre $1$ y $n-1$) en el cromosoma de los padres, y combinar la subsecuencia de genes antes de ese punto de uno de los padres con la subsecuencia de genes después de ese punto del otro padre. Cabe destacar que el operador de cruzamiento se aplica con una probabilidad de $0.9$ sobre cada pareja.
 
@@ -169,9 +191,11 @@ Después, ya que se tiene la descendencia (incluidos los padres sobre los cuales
 
 El test o función objetivo debe actuar sobre los estados, en este caso sobre las poblaciones. Entonces, definimos éste como una función $f:S \rightarrow \mathbb{R}$ tal que
 
+$$
 \begin{equation}
 f(S_{m}) = \max \left\lbrace B(x) : x \in S_{m} \right\rbrace,
 \end{equation}
+$$
 
 es decir, la función objetivo de una población nos devuelve el máximo de los beneficios de sus individuos.
 
@@ -187,40 +211,53 @@ El conjunto de $n$ ciudades y vías entre ellas puede modelarse con el grafo sim
 Debido a que la existencia y cantidad de ciclos de Hamilton en un grafo arbitrario es díficil de caracterizar, y considerando que todo grafo simple y conexo de orden $n$ es un subgrafo del grafo completo $K_{n}$; en este trabajo se considerará al grafo $G$ de $n$ ciudades como un subgrafo del grafo completo $K_{n}$, asignando un costo infinito (o muy grande) a las aristas que no existan en el grafo $G$.
 
 El conjunto de vértices de $K_{n}$ se denotará como $V$, y está dado por
+$$
 \begin{equation}
 V = \left\lbrace V_{1},\dots,V_{n} \right\rbrace.
 \end{equation}
+$$
 
 Por otro lado, el conjunto de aristas, denotado como $E$, es de la forma
+
+$$
 \begin{equation}
 E = \left\lbrace  \left\lbrace u,v \right\rbrace \subseteq V \: \middle| \:  u \neq v \right\rbrace,
 \end{equation}
+$$
 
 en donde cada arista $\left\lbrace u,v \right\rbrace$ tiene un costo asociado $Cost(\left\lbrace u,v \right\rbrace)$ dada por una función $Cost : E \rightarrow \mathbb{R}^{+}$. Por tanto, el espacio de soluciones está dado por
 
+$$
 \begin{equation}
 \text{Sol} = \left\lbrace (P_{1},\dots,P_{n}) \in V^{n} \: \middle| \: \; P_{i} \neq P_{j} \; \forall \, i \neq j \right\rbrace.
 \end{equation}
+$$
 
 Nótese que el espacio de soluciones está bien definido gracias a que se está trabajando sobre el grafo $K_{n}$, de manera que todas las posibles aristas existen. Dada una solución $P = (P_{1},\dots,P_{n}) \in \text{Sol}$, se define su costo total como:
 
+$$
 \begin{equation}
 TotalCost(P) = Cost(\left\lbrace P_{1},P_{n} \right\rbrace) + \sum_{i=1}^{n-1} Cost(\left\lbrace P_{i},P_{i+1} \right\rbrace),
 \end{equation}
+$$
 
 Para resolver el problema usando GA, fijamos primero el tamaño de la población en $m \in \mathbb{N}$ con $2 \leq m \leq \left| \text{Sol} \right|$. Entonces, el espacio de estados está dado por el conjunto
 
+$$
 \begin{equation}
 S = \left\lbrace S_{m} \subseteq \text{Sol} \: : \: \left|S_{m} \right| = m \right\rbrace,
 \end{equation}
+$$
 
 en donde el estado inicial será cualquier elemento elegido aleatoriamente de este conjunto, es decir, una población.
 
 Una vez que se tiene una población, es decir un elemento de $S$, el siguiente paso es seleccionar a los individuos que se van a reproducir, lo cual se puede realizar con un operador de selección, en este caso el operador de selección proporcional (véase la sección 3). Dada una población $S_{m} \in S$ y un individuo $P \in S_{m}$, la probabilidad de selección para el operador de selección proporcional estará dada por:
 
+$$
 \begin{equation}
 p_{P} = \frac{1}{m-1} \cdot \left(1-\frac{TotalCost(P)}{\displaystyle\sum_{Q \in S_{m}} TotalCost(Q)}\right).
 \end{equation}
+$$
 
 El siguiente paso en un GA consiste en el cruzamiento, el cual es implementado con un operador de cruzamiento, en este caso el operador de cruce OX (véase la sección 4), el cual se aplicará con una probabilidad de $0.9$ sobre cada pareja.
 
@@ -228,9 +265,11 @@ Después, ya que se tiene la descendencia (incluidos los padres sobre los cuales
 
 El test o función objetivo debe actuar sobre los estados, en este caso sobre las poblaciones. Entonces, definimos éste como una función $f:S \rightarrow \mathbb{R}$ tal que
 
+$$
 \begin{equation}
 f(S_{m}) = \min \left\lbrace TotalCost(P) : P \in S_{m} \right\rbrace,
 \end{equation}
+$$
 
 es decir, la función objetivo de una población nos devuelve el mínimo de los costos de sus individuos.
 
@@ -245,17 +284,21 @@ $$\text{Sol} = \left\lbrace x \in \mathbb{R}^D \: : \:  -10 \leq x_i \leq 10 \: 
 
 Para resolver el problema usando GA, fijamos primero el tamaño de la población en $m \in \mathbb{N}$ con $2 \leq m \leq \left| \text{Sol} \right|$. Entonces, el espacio de estados está dado por el conjunto
 
+$$
 \begin{equation}
 S = \left\lbrace S_{m} \subseteq \text{Sol} \: : \: \left|S_{m} \right| = m \right\rbrace,
 \end{equation}
+$$
 
 en donde el estado inicial será cualquier elemento elegido aleatoriamente de este conjunto, es decir, una población.
 
 Una vez que se tiene una población, es decir un elemento de $S$, el siguiente paso es seleccionar a los individuos que se van a reproducir, lo cual se puede realizar con un operador de selección, en este caso el operador de selección proporcional (véase la sección 3). Dada una población $S_{m} \in S$ y un individuo $x \in S_{m}$, la probabilidad de selección para el operador de selección proporcional estará dada por:
 
+$$
 \begin{equation}
 p_{x} = \frac{1}{m-1} \cdot \left(1 - \frac{f(x)}{\displaystyle\sum_{y \in S_{m}} f(y)}\right).
 \end{equation}
+$$
 
 El siguiente paso en un GA consiste en el cruzamiento, el cual es implementado con un operador de cruzamiento, en este caso el operador de cruce aritmético, en el cual la componente $i$ del hijo estará dada por el promedio aritmético de las componentes $i$ de los padres, lo anterior para toda $i \in \left\lbrace 1,\dots,D \right\rbrace$. Este operador se aplicará con una probabilidad de $0.9$ sobre cada pareja.
 
@@ -263,9 +306,11 @@ Después, ya que se tiene la descendencia (incluidos los padres sobre los cuales
 
 El test o función objetivo debe actuar sobre los estados, en este caso sobre las poblaciones. Entonces, definimos éste como una función $F:S \rightarrow \mathbb{R}$ tal que
 
+$$
 \begin{equation}
 F(S_{m}) = \min \left\lbrace f(x) : x \in S_{m} \right\rbrace,
 \end{equation}
+$$
 
 es decir, la función objetivo de una población nos devuelve el mínimo valor de $f$ evaluada en sus individuos.
 
