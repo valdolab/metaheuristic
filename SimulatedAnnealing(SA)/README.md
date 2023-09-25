@@ -32,7 +32,7 @@ P_c \{acepta, j\} =
 $$
 Dode $c \in R^+$ denota al parámetro de control.
 
-
+$$
 \begin{align}
 &k=0, i=i_{start}
 \\
@@ -58,6 +58,7 @@ Dode $c \in R^+$ denota al parámetro de control.
 \\
 & \textbf{hasta } \text{criterio de paro}
 \end{align}
+$$
 
 La velocidad de convergencia del algoritmo está determinada por $L_k$ y $c_k$.
 
