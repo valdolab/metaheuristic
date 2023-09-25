@@ -2,7 +2,7 @@
 ### Solución de problemas mediante Recocido Simulado (SA)
 
 
-### **1. Analice detalladamente las seis funciones definidas en el documento “Funciones de prueba.pdf”.**
+### **1. Analice detalladamente las seis funciones definidas en el documento “Funciones de prueba.pdf”.** (https://github.com/valdolab/metaheuristic/blob/main/Funciones%20de%20prueba.pdf)
 
 
 Las funciones encontradas en el documento "Funciones de prueba.pdf" son las siguientes:
